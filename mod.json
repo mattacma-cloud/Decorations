@@ -1,0 +1,45 @@
+{
+  "Name": "CompanyDecorations",
+  "Enabled": true,
+  "Version": "1.0.0",
+  "Description": "Company decorations / awards screen (Captain's Quarters). Catalog-driven medals and ribbons with citations, lore background, and Darius announcements.",
+  "Author": "Blacknova",
+  "DLL": "CompanyDecorations.dll",
+  "DLLEntryPoint": "CompanyDecorations.Main.Init",
+  "DependsOn": [
+    "ModTek"
+  ],
+  "OptionallyDependsOn": [
+    "Lore_Pack_4SW",
+    "LorePack_Helpers",
+    "ExtendedConversations"
+  ],
+  "Settings": {
+    "EntryPoints": [ "CaptainsQuarters" ],
+    "CatalogRelativePath": "decorations/catalog.json",
+    "ButtonLabel": "Awards",
+    "ButtonIcon": "decoration_Davion_OperationRATServiceRibbon",
+    "ButtonSize": 216,
+    "ButtonWidth": 216,
+    "ButtonHeight": 162,
+    "EmptyListMessage": "No awards earned yet.",
+    "DebugLog": false
+  },
+  "Manifest": [
+    {
+      "Type": "Sprite",
+      "Path": "assets/icons",
+      "ShouldAppendText": false
+    },
+    {
+      "Type": "Texture2D",
+      "Path": "assets/icons",
+      "ShouldAppendText": false
+    },
+    {
+      "Type": "BaseDescriptionDef",
+      "Path": "baseDescriptions",
+      "AddToDB": true
+    }
+  ]
+}

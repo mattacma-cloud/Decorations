@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "defaults": {
+    "sortOrder": 1000,
+    "category": "General"
+  },
+  "decorations": [
+    {
+      "id": "mercenary_raging_wasp",
+      "companyTag": "decoration_Mercenary_RagingWasp",
+      "title": "Raging Wasp",
+      "description": "Awarded to those units that have been honoured by the Buzz Killers mercenary command.",
+      "icon": "decoration_Mercenary_RagingWasp",
+      "loreId": "LoreDecoration_Mercenary_RagingWasp",
+      "category": "Mercenary",
+      "awardedBy": "Buzz Killers",
+      "awardEventId": "event_decoration_Mercenary_RagingWasp",
+      "sortOrder": 5
+    },
+    {
+      "id": "davion_federated_suns_medal_of_honor",
+      "companyTag": "decoration_Davion_FederatedSunsMedalofHonor",
+      "title": "Federated Suns Medal of Honor",
+      "description": "The Federated Suns Medal of Honor is among the highest military decorations awarded by House Davion for extraordinary valor in the field.",
+      "icon": "decoration_Davion_FederatedSunsMedalofHonor",
+      "loreId": "LoreDecoration_Davion_FederatedSunsMedalofHonor",
+      "category": "Federated Suns",
+      "awardedBy": "Federated Suns",
+      "awardEventId": "event_decoration_Davion_FederatedSunsMedalofHonor",
+      "sortOrder": 10
+    },
+    {
+      "id": "davion_operation_rat_service_ribbon",
+      "companyTag": "decoration_Davion_OperationRATServiceRibbon",
+      "title": "Operation RAT Service Ribbon",
+      "description": "Awarded to units that served under Federated Suns command during Operation RAT.",
+      "icon": "decoration_Davion_OperationRATServiceRibbon",
+      "loreId": "LoreDecoration_Davion_OperationRATServiceRibbon",
+      "category": "Federated Suns",
+      "awardedBy": "Federated Suns",
+      "awardEventId": "event_decoration_Davion_OperationRATServiceRibbon",
+      "sortOrder": 20
+    }
+  ]
+}
