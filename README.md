@@ -1,6 +1,7 @@
 # CompanyDecorations 1.0.0
 
-Company awards and decorations for HBS BattleTech (ModTek + Harmony).
+<img width="1920" height="1080" alt="20260910133307_1" src="https://github.com/user-attachments/assets/730237f5-4137-4fa2-91de-8f8394683a0e" />
+
 
 Open **Captain’s Quarters** → **Awards** (lower-right). The screen title is **Decorations**. Select an award for icon, Awarded By, Date of Award, and **Award Details** (Description, Citation, Award Background).
 
