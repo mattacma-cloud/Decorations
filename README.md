@@ -23,6 +23,10 @@ Rebuild from source (no .NET SDK required; quit the game first if the DLL is loc
 powershell -NoProfile -File ".\build.ps1"
 ```
 
+## Contributing new decorations
+
+If you have canon or fan created decorations you would like added to the main pack, please reach out to me and provide the png. and decoration information, which I will include in future releases.  
+
 ## Features
 
 - Catalog-driven decorations (icon, title, description, lore, Awarded By)
