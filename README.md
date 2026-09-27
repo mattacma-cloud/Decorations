@@ -1,7 +1,6 @@
 # CompanyDecorations 1.0.0
 
-<img width="1920" height="1080" alt="20260910133307_1" src="https://github.com/user-attachments/assets/730237f5-4137-4fa2-91de-8f8394683a0e" />
-
+Company awards and decorations for HBS BattleTech (ModTek + Harmony).
 
 Open **Captain’s Quarters** → **Awards** (lower-right). The screen title is **Decorations**. Select an award for icon, Awarded By, Date of Award, and **Award Details** (Description, Citation, Award Background).
 
@@ -23,10 +22,6 @@ Rebuild from source (no .NET SDK required; quit the game first if the DLL is loc
 ```powershell
 powershell -NoProfile -File ".\build.ps1"
 ```
-
-## Contributing new decorations
-
-If you have canon or fan created decorations you would like added to the main pack, please reach out to me and provide the png. and decoration information, which I will include in future releases.  
 
 ## Features
 
