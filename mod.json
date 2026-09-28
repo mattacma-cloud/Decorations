@@ -1,7 +1,7 @@
 {
   "Name": "CompanyDecorations",
   "Enabled": true,
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "Description": "Company decorations / awards screen (Captain's Quarters). Catalog-driven medals and ribbons with citations, lore background, and Darius announcements.",
   "Author": "Blacknova",
   "DLL": "CompanyDecorations.dll",

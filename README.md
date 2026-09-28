@@ -1,4 +1,4 @@
-# CompanyDecorations 1.0.0
+# CompanyDecorations 1.0.1
 
 Company awards and decorations for HBS BattleTech (ModTek + Harmony).
 
@@ -62,7 +62,7 @@ powershell -NoProfile -File ".\build.ps1"
 }
 ```
 
-3. Ship `SimGameEventDef` id `event_decoration_Faction_AwardName` for the Darius popup.
+3. Ship `SimGameEventDef` id `event_decoration_Faction_AwardName` for the Darius popup, with **`"EventType": "UNSELECTABLE"`**. A `NORMAL` + `PUBLISHED` event with no requirement tags joins the random event pool and can fire in any campaign. The event only announces; it never grants the tag.
 4. On flashpoint end, ForceEvent with **`MinDaysWait` / `MaxDaysWait` ≥ 1** (0-day waits at FP complete are often dropped). Stagger multiple awards (e.g. day 1 and day 2).
 
 ### Tag / id conventions
@@ -74,7 +74,7 @@ powershell -NoProfile -File ".\build.ps1"
 | Date stat | `decorationDate_Faction_AwardName` |
 | Award event | `event_decoration_Faction_AwardName` |
 
-Tokens in citations / events: `{CompanyName}` (and common `{COMPANY.Name}` variants).
+Company name token: use **`{COMPANY.CompanyName}`** in both citations and event text. The game resolves it in the Darius popup, and this mod resolves it in stored citations. `{CompanyName}` still works in citations but is **not** resolved by the game in event text.
 
 ## Public API
 
@@ -90,7 +90,17 @@ CompanyDecorations.AwardHelper.QueueAwardAnnouncement(sim, companyTag, minDaysWa
 
 ## Bundled examples
 
-Three sample decorations ship in the catalog (Raging Wasp, Federated Suns Medal of Honor, Operation RAT Service Ribbon). FoT V grant wiring lives in Lore Pack 4SW, not in this mod’s milestone JSON.
+Five decorations ship in the catalog:
+
+| Title | companyTag | Granted by (Lore Pack 4SW) |
+|-------|------------|----------------------------|
+| Diamond Sunburst | `decoration_Davion_SunburstDiamond` | Charge of the Guards IV success |
+| Raging Wasp | `decoration_Mercenary_RagingWasp` | Sample / save editor |
+| Federated Suns Medal of Honor | `decoration_Davion_FederatedSunsMedalofHonor` | Fox's of Tikonov V success |
+| Operation RAT Service Ribbon | `decoration_Davion_OperationRATServiceRibbon` | Fox's of Tikonov V success or fail |
+| Operation RAT Service Ribbon (Charge of the Guards) | `decoration_Davion_OperationRAT_ChargeGuard` | Charge of the Guards IV success or fail |
+
+Grant wiring (milestones, citations, Darius events) lives in Lore Pack 4SW, not in this mod. Silver and Gold Sunburst icons are included in `assets\icons\` for future use but have no catalog rows yet.
 
 ## Do not regress
 
@@ -100,6 +110,7 @@ Three sample decorations ship in the catalog (Raging Wasp, Federated Suns Medal 
 - Portrait stays in its frame; whole-row list select
 - ForceEvent award waits ≥ 1 day after flashpoint completion
 - Date of Award stamped when the `decoration_*` tag is added
+- Award events are `UNSELECTABLE` (forced only); firing an award event without the tag does not grant it
 
 ## License / author
 

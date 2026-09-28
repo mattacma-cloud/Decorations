@@ -297,6 +297,7 @@ namespace CompanyDecorations
                 companyName = "your company";
 
             return text
+                .Replace("{COMPANY.CompanyName}", companyName)
                 .Replace("{CompanyName}", companyName)
                 .Replace("{COMPANY.Name}", companyName)
                 .Replace("{Company.Name}", companyName)
@@ -321,15 +322,19 @@ namespace CompanyDecorations
             if (string.IsNullOrEmpty(companyTag))
                 return;
 
+            // Granting belongs to the pack (milestone AddedTags / Grant); a stray event must not award.
+            if (sim.CompanyTags == null || !sim.CompanyTags.Contains(companyTag))
+            {
+                Main.LogInfo("Award event " + eventId + " fired without tag " + companyTag + "; not granting.");
+                return;
+            }
+
             // Prefer Lore-Packs/citations (or Mods/*/citations); fall back to event Details
             var citation = CitationRegistry.GetTemplate(companyTag);
             if (string.IsNullOrEmpty(citation))
                 citation = eventDef.Description.Details;
             if (string.IsNullOrEmpty(citation))
                 return;
-
-            if (sim.CompanyTags != null && !sim.CompanyTags.Contains(companyTag))
-                sim.CompanyTags.Add(companyTag);
 
             SetCitation(sim, companyTag, citation);
             EnsureAwardDate(sim, companyTag);
