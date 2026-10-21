@@ -115,3 +115,18 @@ Grant wiring (milestones, citations, Darius events) lives in Lore Pack 4SW, not 
 ## License / author
 
 Author: **Blacknova**. Use and redistribute with your BattleTech mod packs as you see fit; keep attribution in `mod.json` unless you fork under your own name.
+
+
+# Installation
+Drag the folders into you mods folder and accept any file overwrites.
+
+# Depends On
+The mod depends on the following:
+
+- ModTek
+
+Optionally Depends On
+
+- LorePack_Helpers
+
+- ExtendedConversations
