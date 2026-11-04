@@ -1,69 +1,141 @@
-{
-  "version": 1,
-  "defaults": {
-    "sortOrder": 1000,
-    "category": "General"
-  },
-  "decorations": [
-    {
-      "id": "mercenary_raging_wasp",
-      "companyTag": "decoration_Mercenary_RagingWasp",
-      "title": "Raging Wasp",
-      "description": "Awarded to those units that have been honoured by the Buzz Killers mercenary command.",
-      "icon": "decoration_Mercenary_RagingWasp",
-      "loreId": "LoreDecoration_Mercenary_RagingWasp",
-      "category": "Mercenary",
-      "awardedBy": "Buzz Killers",
-      "awardEventId": "event_decoration_Mercenary_RagingWasp",
-      "sortOrder": 5
-    },
-    {
-      "id": "davion_federated_suns_medal_of_honor",
-      "companyTag": "decoration_Davion_FederatedSunsMedalofHonor",
-      "title": "Federated Suns Medal of Honor",
-      "description": "The Federated Suns Medal of Honor is among the highest military decorations awarded by House Davion for extraordinary valor in the field.",
-      "icon": "decoration_Davion_FederatedSunsMedalofHonor",
-      "loreId": "LoreDecoration_Davion_FederatedSunsMedalofHonor",
-      "category": "Federated Suns",
-      "awardedBy": "Federated Suns",
-      "awardEventId": "event_decoration_Davion_FederatedSunsMedalofHonor",
-      "sortOrder": 10
-    },
-    {
-      "id": "davion_operation_rat_service_ribbon",
-      "companyTag": "decoration_Davion_OperationRATServiceRibbon",
-      "title": "Operation RAT Service Ribbon",
-      "description": "Awarded to units that served under Federated Suns command during Operation RAT.",
-      "icon": "decoration_Davion_OperationRATServiceRibbon",
-      "loreId": "LoreDecoration_Davion_OperationRATServiceRibbon",
-      "category": "Federated Suns",
-      "awardedBy": "Federated Suns",
-      "awardEventId": "event_decoration_Davion_OperationRATServiceRibbon",
-      "sortOrder": 20
-    },
-    {
-      "id": "davion_sunburst_diamond",
-      "companyTag": "decoration_Davion_SunburstDiamond",
-      "title": "Diamond Sunburst",
-      "description": "The Sunburst Medal was awarded to soldiers and civilians for heroic actions of importance or significance to the entire Federated Suns. Whilst many recipients were awarded the medal for military actions, the award of a Sunburst Medal is not limited to the military; with instances of the Sunburst Medal being award to those who perform courageous political or even economic action. The Sunburst Medal can be awarded at one of three ranks: Silver, Gold, and Diamond. The Diamond, being the highest rank of Sunburst, was worn on the opposite breast of the dress uniform to a soldier's other ribbons and medals.",
-      "icon": "decoration_Davion_SunburstDiamond",
-      "loreId": "LoreDecoration_Davion_SunburstDiamond",
-      "category": "Federated Suns",
-      "awardedBy": "Federated Suns",
-      "awardEventId": "event_decoration_Davion_SunburstDiamond",
-      "sortOrder": 1
-    },
-    {
-      "id": "davion_operation_rat_charge_guard",
-      "companyTag": "decoration_Davion_OperationRAT_ChargeGuard",
-      "title": "Operation RAT Service Ribbon",
-      "description": "Awarded to units that served under Federated Suns command during Operation RAT.",
-      "icon": "decoration_Davion_OperationRAT_ChargeGuard",
-      "loreId": "LoreDecoration_Davion_OperationRAT_ChargeGuard",
-      "category": "Federated Suns",
-      "awardedBy": "Federated Suns",
-      "awardEventId": "event_decoration_Davion_OperationRAT_ChargeGuard",
-      "sortOrder": 21
-    }
-  ]
-}
+{
+  "version": 1,
+  "defaults": {
+    "sortOrder": 1000,
+    "category": "General"
+  },
+  "decorations": [
+    {
+      "id": "mercenary_raging_wasp",
+      "companyTag": "decoration_Mercenary_RagingWasp",
+      "title": "Raging Wasp",
+      "description": "Awarded to those units that have been honoured by the Buzz Killers mercenary command.",
+      "icon": "decoration_Mercenary_RagingWasp",
+      "loreId": "LoreDecoration_Mercenary_RagingWasp",
+      "category": "Mercenary",
+      "awardedBy": "Buzz Killers",
+      "awardEventId": "event_decoration_Mercenary_RagingWasp",
+      "sortOrder": 8
+    },
+    {
+      "id": "davion_federated_suns_medal_of_honor",
+      "companyTag": "decoration_Davion_FederatedSunsMedalofHonor",
+      "title": "Federated Suns Medal of Honor",
+      "description": "The Federated Suns Medal of Honor is among the highest military decorations awarded by House Davion for extraordinary valor in the field.",
+      "icon": "decoration_Davion_FederatedSunsMedalofHonor",
+      "loreId": "LoreDecoration_Davion_FederatedSunsMedalofHonor",
+      "category": "Federated Suns",
+      "awardedBy": "Federated Suns",
+      "awardEventId": "event_decoration_Davion_FederatedSunsMedalofHonor",
+      "sortOrder": 10
+    },
+    {
+      "id": "davion_operation_rat_service_ribbon",
+      "companyTag": "decoration_Davion_OperationRATServiceRibbon",
+      "title": "Operation RAT Service Ribbon",
+      "description": "Awarded to units that served under Federated Suns command during Operation RAT.",
+      "icon": "decoration_Davion_OperationRATServiceRibbon",
+      "loreId": "LoreDecoration_Davion_OperationRATServiceRibbon",
+      "category": "Federated Suns",
+      "awardedBy": "Federated Suns",
+      "awardEventId": "event_decoration_Davion_OperationRATServiceRibbon",
+      "sortOrder": 20
+    },
+    {
+      "id": "davion_sunburst_diamond",
+      "companyTag": "decoration_Davion_SunburstDiamond",
+      "title": "Diamond Sunburst",
+      "description": "The Sunburst Medal was awarded to soldiers and civilians for heroic actions of importance or significance to the entire Federated Suns. Whilst many recipients were awarded the medal for military actions, the award of a Sunburst Medal is not limited to the military; with instances of the Sunburst Medal being award to those who perform courageous political or even economic action. The Sunburst Medal can be awarded at one of three ranks: Silver, Gold, and Diamond. The Diamond, being the highest rank of Sunburst, was worn on the opposite breast of the dress uniform to a soldier's other ribbons and medals.",
+      "icon": "decoration_Davion_SunburstDiamond",
+      "loreId": "LoreDecoration_Davion_SunburstDiamond",
+      "category": "Federated Suns",
+      "awardedBy": "Federated Suns",
+      "awardEventId": "event_decoration_Davion_SunburstDiamond",
+      "sortOrder": 1
+    },
+    {
+      "id": "davion_operation_rat_charge_guard",
+      "companyTag": "decoration_Davion_OperationRAT_ChargeGuard",
+      "title": "Operation RAT Service Ribbon",
+      "description": "Awarded to units that served under Federated Suns command during Operation RAT.",
+      "icon": "decoration_Davion_OperationRAT_ChargeGuard",
+      "loreId": "LoreDecoration_Davion_OperationRAT_ChargeGuard",
+      "category": "Federated Suns",
+      "awardedBy": "Federated Suns",
+      "awardEventId": "event_decoration_Davion_OperationRAT_ChargeGuard",
+      "sortOrder": 21
+    },
+    {
+      "id": "davion_sunburst_gold",
+      "companyTag": "decoration_Davion_SunburstGold",
+      "title": "Gold Sunburst",
+      "description": "Awarded for significant actions that advance the cause of the Federated Suns",
+      "icon": "decoration_Davion_SunburstGold",
+      "loreId": "LoreDecoration_Davion_SunburstGold",
+      "category": "Federated Suns",
+      "awardedBy": "Federated Suns",
+      "awardEventId": "event_decoration_Davion_SunburstGold",
+      "sortOrder": 2
+    },
+    {
+      "id": "davion_limp_sword_flag",
+      "companyTag": "decoration_Davion_LimpSwordFlag",
+      "title": "Limp Sword Flag",
+      "description": "Awarded to units for notable service against the Capellan Confederation.",
+      "icon": "decoration_Davion_LimpSwordFlag",
+      "loreId": "LoreDecoration_Davion_LimpSwordFlag",
+      "category": "Federated Suns",
+      "awardedBy": "Federated Suns",
+      "awardEventId": "event_decoration_Davion_LimpSwordFlag",
+      "sortOrder": 4
+    },
+    {
+      "id": "davion_operation_rat_liao_bane",
+      "companyTag": "decoration_Davion_OperationRAT_LiaoBane",
+      "title": "Operation RAT Service Ribbon",
+      "description": "Awarded to units that served under Federated Suns command during Operation RAT.",
+      "icon": "decoration_Davion_OperationRAT_LiaoBane",
+      "loreId": "LoreDecoration_Davion_OperationRAT_LiaoBane",
+      "category": "Federated Suns",
+      "awardedBy": "Federated Suns",
+      "awardEventId": "event_decoration_Davion_OperationRAT_LiaoBane",
+      "sortOrder": 5
+    },
+    {
+      "id": "davion_sunburst_silver",
+      "companyTag": "decoration_Davion_SunburstSilver",
+      "title": "Silver Sunburst",
+      "description": "Awarded for significant actions that advance the cause of the Federated Suns",
+      "icon": "decoration_Davion_SunburstSilver",
+      "loreId": "LoreDecoration_Davion_SunburstSilver",
+      "category": "Federated Suns",
+      "awardedBy": "Federated Suns",
+      "awardEventId": "event_decoration_Davion_SunburstSilver",
+      "sortOrder": 3
+    },
+    {
+      "id": "davion_operation_rat_family_matters",
+      "companyTag": "decoration_Davion_OperationRAT_FamilyMatters",
+      "title": "Operation RAT Service Ribbon",
+      "description": "Awarded to units that served under Federated Suns command during Operation RAT.",
+      "icon": "decoration_Davion_OperationRAT_FamilyMatters",
+      "loreId": "LoreDecoration_Davion_OperationRAT_FamilyMatters",
+      "category": "Federated Suns",
+      "awardedBy": "Federated Suns",
+      "awardEventId": "event_decoration_Davion_OperationRAT_FamilyMatters",
+      "sortOrder": 6
+    },
+    {
+      "id": "mercenary_blue_star_pin",
+      "companyTag": "decoration_Mercenary_BlueStarPin",
+      "title": "Blue Star Pin",
+      "description": "Awarded to units that served under Federated Suns command during Operation RAT.",
+      "icon": "decoration_Mercenary_BlueStarPin",
+      "loreId": "LoreDecoration_Mercenary_BlueStarPin",
+      "category": "Blue Star Irregulars",
+      "awardedBy": "Mercenaries",
+      "awardEventId": "event_decoration_Mercenary_BlueStarPin",
+      "sortOrder": 7
+    }
+  ]
+}
