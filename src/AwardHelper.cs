@@ -269,7 +269,7 @@ namespace CompanyDecorations
                         {
                             var stored = stat.Value<string>();
                             if (!string.IsNullOrEmpty(stored))
-                                return stored;
+                                return ResolveTokens(sim, stored);
                         }
                     }
                     catch (Exception ex)
@@ -297,6 +297,7 @@ namespace CompanyDecorations
                 companyName = "your company";
 
             return text
+                .Replace("{COMAPNY.CompanyName}", companyName)
                 .Replace("{COMPANY.CompanyName}", companyName)
                 .Replace("{CompanyName}", companyName)
                 .Replace("{COMPANY.Name}", companyName)

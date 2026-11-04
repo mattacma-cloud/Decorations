@@ -181,7 +181,8 @@ namespace CompanyDecorations
             _loreBody.text = CitationTextUtil.FormatLorePopupBody(def);
             if (_loreIcon != null)
             {
-                IconLoader.Assign(_loreIcon, _currentAwardIconId, _sim);
+                var loreIcon = string.IsNullOrEmpty(def.Icon) ? _currentAwardIconId : def.Icon;
+                IconLoader.Assign(_loreIcon, loreIcon, _sim);
                 _loreIcon.gameObject.SetActive(true);
             }
             _loreRoot.SetActive(true);

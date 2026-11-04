@@ -52,7 +52,15 @@ namespace CompanyDecorations
                 if (sim.DataManager.BaseDescriptionDefs != null &&
                     sim.DataManager.BaseDescriptionDefs.TryGet(id, out def) &&
                     def != null)
-                    return true;
+                {
+                    if (!string.Equals(def.Id, id, StringComparison.OrdinalIgnoreCase))
+                    {
+                        Main.LogError("BaseDescriptionDef mismatch. Requested " + id + " got " + def.Id);
+                        def = null;
+                    }
+                    else
+                        return true;
+                }
             }
             catch (Exception ex)
             {
