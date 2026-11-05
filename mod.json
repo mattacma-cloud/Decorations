@@ -10,7 +10,6 @@
     "ModTek"
   ],
   "OptionallyDependsOn": [
-    "Lore_Pack_4SW",
     "LorePack_Helpers",
     "ExtendedConversations"
   ],
