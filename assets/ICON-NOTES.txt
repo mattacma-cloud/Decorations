@@ -1,0 +1,13 @@
+# Decoration icons
+
+PNG files in assets/icons are registered as ModTek Sprites and Texture2D.
+
+Keep notes out of assets/icons. ModTek registers every file in that folder, and a text file becomes a sprite id.
+
+Filename (without extension) must match the catalog `icon` field and any event `Icon` id, e.g.:
+
+- decoration_Mercenary_RagingWasp.png
+- decoration_Davion_FederatedSunsMedalofHonor.png
+- decoration_Davion_OperationRATServiceRibbon.png
+
+Preferred size: 512x512 (or matching your other UI medals).
